@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Paralel Classlari Calistirma" parallel="tests" thread-count="2" verbose="3">
+
+
+    <test name="Sirali Cross Browser Chrome">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="test.day13_CrossBrowserTests.C01_PozitifLoginTesti_CrossBrowser"></class>
+        </classes>
+    </test>
+
+
+
+    <test name="Sirali Cross Browser Edge">
+        <parameter name="browser" value="edge"></parameter>
+        <classes>
+            <class name="test.day13_CrossBrowserTests.C02_AmazonTestCross"></class>
+        </classes>
+    </test>
+
+
+</suite>
